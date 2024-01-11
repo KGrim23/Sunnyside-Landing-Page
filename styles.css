@@ -1,0 +1,489 @@
+@import url(https://fonts.google.com/specimen/Barlow);
+@import url(https://fonts.google.com/specimen/Fraunces);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: Barlow, sans-serif;
+}
+    
+.navbar{    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 20px;
+
+}
+
+
+.navlinks, li{
+    display: inline-block;
+    align-items: center;
+    list-style-type: none;
+    padding: 1.3rem;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: auto;
+}
+
+ul{
+    display: flex;
+    float: right;
+}
+
+button{
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 27px;
+    padding-right: 27px;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+.container1{
+    background-color: rgba(62,191,255,255);
+
+}
+
+.hero{
+    position: relative;
+    text-align: center;
+   
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: Fraunces;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.8rem;
+    padding-bottom: 100px;
+}
+
+.arrow{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-img{
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;    
+}
+
+/* 6 grids session */
+.container2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 0;
+}
+
+.grid-image{
+    width: 100%;
+    height: 100%;
+}
+
+.grid1, .grid4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 700px;
+    margin: auto;
+}
+
+.overlay{
+    position: relative;
+    text-align: center;
+    
+}
+
+.text3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 700px;
+    margin: auto;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.para{
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+}
+
+h3{
+    font-family: Lora, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 35px;
+}
+
+h4{
+    font-family: Barlow, sans-serif;
+    font-size: 2rem;
+    opacity: 60%;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+a{
+    font-size: 1.3rem;
+    font-family: lora, sans-serif;
+    font-weight: 400;
+}
+
+p{
+    font-family: Barlow;
+    text-align: left;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: rgb(85, 82, 82);
+    margin-bottom: 35px;
+}
+
+.container3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 180px;
+   
+}
+
+.container4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    opacity: 90%;
+    color: rgb(64, 62, 62);
+    font-weight: bold;
+}
+
+.profile{
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 70px;
+}
+
+.author{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0;
+}
+/*footer*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(168, 34%, 41%);
+    margin-top: 0;
+    height: 600px;
+}
+.logo{
+   margin-bottom: 30px;
+   
+}
+
+li{
+    font-size: 2rem;
+}
+
+ul{
+    gap: 80px;
+}
+
+.socials{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.hamburger-button{
+    display: none;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.nav-links{
+    display: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color:white;
+    margin-top: 50px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    padding: 10px;
+}
+
+
+
+
+/* media queries*/
+
+@media only screen and (max-width: 390px){
+
+    .container2, .container3, .container4{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+
+    .container1{
+        width: 100%
+    
+    }
+
+    .container3{
+        gap: 5px;
+        margin-left: 60px;
+        margin-right: 60px;
+       
+    }
+
+    .text1{
+        font-size: 2rem;
+    }
+
+    .author{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .title{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .grid1, .grid4{
+        font-size: 6px;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        padding-left: 10px;
+    }
+
+    a{
+        margin-bottom: 20px; 
+    }
+
+    h4{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .grid4 > h3{
+        margin-top: 13px;
+    }
+
+    .text3{
+        font-size: 0.7rem;
+    }
+
+    .para{
+        font-size: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    p{
+        font-size: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+
+    }
+
+    .footer{
+        width: 390px;
+        height: 400px;
+    }
+
+    li{
+        font-size: 10px;
+    }
+
+    ul{
+        gap: 27px;
+    }
+
+    .testimonial{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .grid-image{
+        height: 100%;
+    }
+
+    .para{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        width: 390px;
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+
+    p{ 
+        font-size: 14px;
+    }
+
+    .profile{
+        margin-bottom: 40px;
+    }
+
+    .attribution a{ 
+        font-size: 12px; 
+        text-align: center; 
+        color:white;
+        margin-top: 20px;
+    }
+
+    /*Hamburger Menu*/
+
+    .text1{
+        margin-top: 20px;
+    }
+
+    button{
+        display: none;
+    }
+
+    .navlinks{
+        display: none;
+        margin: 20px;
+    }
+
+    .navbar{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        padding-left: 8px;
+        padding-right: 5px;
+    }
+
+    .hamburger-button {
+        display: flex;
+        background-color: none;
+        color: white
+        padding: 15px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 50%;
+        
+     }
+
+     .arrow{
+        top: 60%;
+        margin-top: 10px;
+     }
+
+     .nav-links {
+        display: none;
+        background-color: none;
+        color: white;  
+     }
+     
+     .nav-links a {
+        display: block;
+        padding: 6px;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        margin-bottom: 0;
+        font-family: Barlow, sans-serif;
+        
+     }
+
+     .nav-links a:hover {
+        text-decoration: underline;  
+     }
+
+     .logo{
+        margin: 0;
+        
+     }
+
+}
+
